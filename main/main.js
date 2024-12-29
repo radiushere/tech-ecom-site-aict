@@ -3,7 +3,7 @@ function switchToLogin() {
 }
 
 function switchToRegister() {
-    window.location.href = "register.html";
+    window.location.href = "main/register.html";
 }
 
 function validateForm(event) {
