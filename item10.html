@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/Shopcart.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <script src="nav.js"></script>
+    <script src="cart.js"></script>
+
+    <main class="container main-content">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="images/REMOSony.png" width="400" class="img-fluid mx-auto d-block">
+                    <p class="mt-2" style="color: rgb(35, 190, 35);">Headphones</p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="product-title cyber-title">Sony WH-1000XM5 Wireless Industry Leading Noise Canceling
+                        Headphones</h2>
+                    <p>The best wireless noise canceling headphones with auto noise canceling optimizer, crystal clear
+                        hands-free calling and Alexa voice control.</p>
+                    <p class="product-brand text-success">Brand: Sony</p>
+
+                    <div class="mb-3">
+                        <strong>Connectivity technology: </strong>
+                        <button class="btn btn-outline-info btn-sm"
+                            style="border-color: #00ff00; color: #00ff00;">Wireless</button>
+                    </div>
+
+                    <div class="mb-3">
+                        <p class="product-price" style="color: #8de48d;">
+                            Price: <span class="text fs-3 fw-bold">Rs.75,789</span>
+                        </p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label" style="color: #00ff00;">Quantity:</label>
+                        <div class="input-group quantity-input">
+                            <button class="btn btn-outline-secondary" type="button" id="decrease">−</button>
+                            <input type="number" class="form-control text-center" id="quantity" value="1" min="1">
+                            <button class="btn btn-outline-secondary" type="button" id="increase">+</button>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="cyber-btn me-2"
+                            style="background-color: #0c0; border-color: #0c0; color: #000000;" onclick="addToCart({
+                                id: '10',
+                                name: 'Sony WH-1000XM5 Wireless Industry Leading Noise Canceling Headphones',
+                                price: 75789,
+                                quantity: document.getElementById('quantity').value,
+                                image: 'images/REMOSony.png'
+                            })">Add to cart</button>
+                        </button>
+                        <button class="cyber-btn"
+                            style="background-color: #0c0; border-color: #0c0; color: #000000;">Buy it now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5" style="background-color: #000; border-top: 2px solid #00ff00; padding: 40px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 style="color: #00ff00;">Tech Realm</h4>
+                    <p style="color: #8de48d;"></p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 style="color: #00ff00;">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" style="color: #8de48d; text-decoration: none;">Home</a></li>
+                        <li><a href="#products" style="color: #8de48d; text-decoration: none;">Products</a></li>
+                        <li><a href="about.html" style="color: #8de48d; text-decoration: none;">About Us</a></li>
+                        <li><a href="contact.html" style="color: #8de48d; text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 style="color: #00ff00;">Contact Info</h5>
+                    <ul class="list-unstyled" style="color: #8de48d;">
+                        <li>Email: info@techrealm.com</li>
+                        <li>Phone: +00 111 3246587</li>
+                        <li>Address: North California, Night City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p style="color: #8de48d; margin-bottom: 0;">© 2024 Tech Realm. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
