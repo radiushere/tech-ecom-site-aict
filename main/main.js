@@ -1,9 +1,9 @@
 function switchToLogin() {
-    window.location.href = "index.html";
+    window.location.href = "_login.html";
 }
 
 function switchToRegister() {
-    window.location.href = "main/register.html";
+    window.location.href = "register.html";
 }
 
 function validateForm(event) {
