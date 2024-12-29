@@ -1,5 +1,5 @@
 function switchToLogin() {
-    window.location.href = "_login.html";
+    window.location.href = "index.html";
 }
 
 function switchToRegister() {
