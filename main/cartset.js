@@ -83,7 +83,7 @@ function submitShippingInfo() {
             background: '#000',
             color: '#00ff00',
             confirmButtonClass: 'cyber-btn',
-            confirmButtonColor: '#00ff00'
+            confirmButtonClass: 'cyber-btn',
         });
     } else {
         form.reportValidity();
