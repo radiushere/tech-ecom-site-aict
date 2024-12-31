@@ -1,7 +1,7 @@
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Check if item already exists in cart
+    //justcheck
     const existingItem = cart.find(item => item.id === product.id);
 
     if (existingItem) {
