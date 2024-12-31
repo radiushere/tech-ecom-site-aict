@@ -73,9 +73,6 @@ function submitShippingInfo() {
         const address = document.getElementById('address').value;
         const city = document.getElementById('city').value;
         const postalCode = document.getElementById('postalCode').value;
-
-        // Here you would typically send this data to your backend
-        // For now, we'll just show a success message
         const modal = bootstrap.Modal.getInstance(document.getElementById('checkoutModal'));
         modal.hide();
 
