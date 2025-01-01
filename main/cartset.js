@@ -27,7 +27,7 @@ function renderCart() {
                 Rs.${item.price}
                 </div>
                 <div class="col-2">
-                <input type="number" class="form-control" value="${item.quantity}" 
+                <input type="number" class="form-control" value="${item.quantity}" min="1" 
                     onchange="updateQuantity('${item.id}', this.value)">
                 </div>
                 <div class="col-1">

@@ -27,4 +27,5 @@ function addToCart(product) {
             content: 'swal2-content'
         }
     });
+
 }
